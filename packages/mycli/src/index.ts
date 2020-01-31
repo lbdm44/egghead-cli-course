@@ -8,7 +8,11 @@ class Mycli extends Command {
     version: flags.version({ char: 'v' }),
     help: flags.help({ char: 'h' }),
     // flag with a value (-n, --name=VALUE)
-    name: flags.string({ char: 'n', description: 'name to print' }),
+    name: flags.string({
+      char: 'n',
+      description: 'name to print',
+      default: 'world',
+    }),
     // flag with no value (-f, --force)
     force: flags.boolean({ char: 'f' }),
   };
@@ -17,9 +21,10 @@ class Mycli extends Command {
 
   async run() {
     const { args, flags } = this.parse(Mycli);
+    const name = flags.name;
 
-    const name = flags.name || 'world';
     this.log(`hello ${name} from ./src/index.ts`);
+
     if (args.file && flags.force) {
       this.log(`you input --force and --file: ${args.file}`);
     }
