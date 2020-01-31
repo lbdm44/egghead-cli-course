@@ -1,6 +1,17 @@
 {
-  "extends": [
-    "oclif",
-    "oclif-typescript"
+  "extends": ["oclif", "oclif-typescript"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{js,ts}"],
+      "rules": {
+        "object-curly-spacing": 0,
+        "semi": "off",
+        "indent": "off"
+      }
+    }
   ]
 }
