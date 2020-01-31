@@ -1,12 +1,4 @@
-mycli
-=====
-
-Note: This repo is used to follow the egghead cli course.
-
-Notes:
-- https://github.com/sw-yx/cli-cheatsheet
-
-
+# mycli
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/mycli.svg)](https://npmjs.org/package/mycli)
@@ -14,11 +6,15 @@ Notes:
 [![License](https://img.shields.io/npm/l/mycli.svg)](https://github.com/lbdm44/egghead-cli-course/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
+
+- [Usage](#usage)
+- [Commands](#commands)
+  <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g mycli
 $ mycli COMMAND
@@ -30,8 +26,11 @@ USAGE
   $ mycli COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
 
 <!-- commandsstop -->
