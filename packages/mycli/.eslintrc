@@ -6,7 +6,7 @@
   },
   "overrides": [
     {
-      "files": ["**/*.{js,ts}", "/bin/run"],
+      "files": ["**/*.{js,ts}", "./bin/run"],
       "rules": {
         "object-curly-spacing": 0,
         "semi": "off",
